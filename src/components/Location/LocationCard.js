@@ -5,7 +5,7 @@ const LocationCard = () => {
     <div className="card">
       <div className="card-content">
         <picture>
-          <img src={require("./location.jpg")} alt="My Dog" />
+          <img src={require("./location.jpg")} alt="location" />
         </picture>
         <h3>
           Name: <span className="card-locationname">Nashville Doggie Daycare</span>
