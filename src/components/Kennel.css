@@ -41,8 +41,11 @@ address {
 img {
   display: block;
   border: 0;
-  width: 50%;
+  width: 75%;
   height: auto;
+  padding: 2em;
+  
+ 
 }
 
 .section-content {

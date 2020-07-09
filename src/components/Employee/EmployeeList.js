@@ -14,6 +14,10 @@ const EmployeeList = () => {
             setEmployees(employeesFromAPI)
         });
     };
+    const deleteEmployee = id => {
+        EmployeeManager.delete(id)
+          .then(() => EmployeeManager.getAll().then(setEmployees));
+      };
 // got the locations from the API on the component's frist render
     useEffect(() => {
         getEmployees();
@@ -21,7 +25,7 @@ const EmployeeList = () => {
     // Finally we use map() to loop over the locations array to show a list of location cards
     return (
         <div className="container-cards">
-            {employees.map(employee => <EmployeeCard key={employee.id} employees={employee}/>)}
+            {employees.map(employee => <EmployeeCard key={employee.id} employees={employee} deleteEmployee={deleteEmployee}/>)}
         </div>
     );
 };
