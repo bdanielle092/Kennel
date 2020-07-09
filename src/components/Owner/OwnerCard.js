@@ -1,16 +1,16 @@
 import React from "react";
 
-const AnimalCard = () => {
+const AnimalCard = (props) => {
   return (
     <div className="card">
       <div className="card-content">
         <picture>
-          <img src={require("./owner.jpg")} alt="owner" />
+          <img src={require(`${props.owners.picture}`)} alt="owner" />
         </picture>
         <h3>
-          Name: <span className="card-ownername">Kate</span>
+  Name: <span className="card-ownername">{props.owners.name}</span>
         </h3>
-        <p>I love my dog Rio. Nashville doggie daycare is awesome!</p>
+            <p>Quote: {props.owners.quote}</p>
       </div>
     </div>
   );

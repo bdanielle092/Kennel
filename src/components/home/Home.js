@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div>
     <h2>
-     Faith's Doggie Kennels
+     Doggie Kennels
       <br />
       <small>Loving care when you're not there.</small>
     </h2>

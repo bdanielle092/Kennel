@@ -23,7 +23,7 @@ const AnimalList = () => {
   // Finally we use map() to "loop over" the animals array to show a list of animal cards
   return (
     <div className="container-cards">
-      {animals.map(animal => <AnimalCard key={animal.id} pet={animal}/>)}
+      {animals.map(animal => <AnimalCard key={animal.id} animals={animal}/>)}
     </div>
   );
 };

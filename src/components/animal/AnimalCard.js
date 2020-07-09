@@ -5,12 +5,12 @@ const AnimalCard = (props) => {
     <div className="card">
       <div className="card-content">
         <picture>
-          <img src={require("./dog.svg")} alt="My Dog" />
+          <img src={require(`${props.animals.picture}`)} alt="My Dog" />
         </picture>
         <h3>
-          Name: <span className="card-petname">{props.pet.name}</span>
+          Name: <span className="card-petname">{props.animals.name}</span>
         </h3>
-        <p>Breed: {props.pet.breed}</p>
+        <p>Breed: {props.animals.breed}</p>
       </div>
     </div>
   );

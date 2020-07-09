@@ -1,7 +1,29 @@
 {
     "animals": [
-        { "id": 1, "name": "Doodles", "breed": "Poodle"},
-        { "id": 2, "name": "Decker", "breed": "German Shepherd" },
-        { "id": 3, "name": "Esme", "breed": "Pitbull" }
+        { "id": 1, "name": "Doodles", "breed": "Poodle", "picture": "./img/doodles.jpg"},
+        { "id": 2, "name": "Decker", "breed": "German Shepherd", "picture": "./img/decker.jpg"},
+        { "id": 3, "name": "Esme", "breed": "Pitbull", "picture": "./img/esme.jpg" }
+    ],
+
+    "locations": [
+        {"id": 1, "name": "Nashville Doggie Daycare", "quote": "Best doggie daycare in town", "picture": "./img/location.jpg"},
+        {"id": 2, "name": "Faith's Doggie Kennel", "quote": "Your second Home", "picture": "./img/location2.jpg"},
+        {"id": 3, "name": "Franklin Doggie Daycare", "quote": "The perfect place to Hang", "picture": "./img/location3.jpg"}
+    ],
+
+    "employees": [
+       {"id": 1, "name": "Brad", "quote": "Employee of the Month", "picture": "./img/employee.jpg" },
+       {"id": 2, "name": "Joy", "quote": "Your pets are my second Family", "picture": "./img/employee2.jpg"},
+       {"id": 3, "name": "Maddie", "quote": "I enjoyed hanging with your pets", "picture": "./img/employee3.jpg"}
+    ],
+
+    "owners": [
+        {"id": 1, "name": "Kate", "quote": "I love my dog Rio. Nashville doggie daycare is awesome!", "picture": "./img/owner.jpg" },
+        {"id": 2, "name": "Chris", "quote": "Faith' doggie Kennel always greet Roo with a smile", "picture": "./img/chris.jpg"},
+        {"id": 3, "name": "Vanessa", "quote": "My dog Shelby is so happy after being at Franklin doggie Kennel", "picture": "./img/vanessa.jpg"}
     ]
+
+
+   
+
 }

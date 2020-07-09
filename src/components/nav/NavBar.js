@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <header>
       <h1 className="site-title">
-        Faith's Doggie Kennels
+        Doggie Kennels
         <br />
         <small>Loving care when you're not there.</small>
       </h1>
