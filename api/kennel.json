@@ -8,7 +8,7 @@
     },
     {
       "id": 2,
-      "name": "Decker",
+      "name": "decker",
       "breed": "German Shepherd",
       "picture": "./img/decker.jpg"
     },
@@ -17,6 +17,12 @@
       "name": "Esme",
       "breed": "Pitbull",
       "picture": "./img/esme.jpg"
+    },
+    {
+      "name": "rex",
+      "breed": "cat",
+      "picture": "./img/dog.svg",
+      "id": 4
     }
   ],
   "locations": [
@@ -37,6 +43,12 @@
       "name": "Franklin Doggie Daycare",
       "quote": "The perfect place to Hang",
       "picture": "./img/location3.jpg"
+    },
+    {
+      "name": "Brentwood Doggie daycare",
+      "quote": "Your home away from home",
+      "picture": "./img/location.jpg",
+      "id": 4
     }
   ],
   "employees": [
