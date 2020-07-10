@@ -25,6 +25,7 @@ const ApplicationViews = () => {
           return <AnimalList/>;
         }}
       />
+    
        <Route
         path="/locations"
         render={props => {

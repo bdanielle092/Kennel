@@ -48,7 +48,7 @@
     },
     {
       "id": 2,
-      "name": "Joy",
+      "name": "Jake",
       "quote": "Your pets are my second Family",
       "picture": "./img/employee2.jpg"
     },
@@ -64,7 +64,7 @@
       "id": 1,
       "name": "Kate",
       "quote": "I love my dog Rio. Nashville doggie daycare is awesome!",
-      "picture": "./img/owner.jpg"
+      "picture": "./img/kate.jpg"
     },
     {
       "id": 2,

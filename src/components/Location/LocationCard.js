@@ -12,7 +12,7 @@ const LocationCard = (props) => {
   Name: <span className="card-locationname">{props.locations.name}</span>
         </h3>
   <p>Quote: {props.locations.quote}</p>
-  <button type="button" onClick={() => props.deleteLocation(props.locations.id)}>Remove</button>
+  <button type="button" onClick={() => props.deleteLocation(props.locations.id)}>Closed</button>
       </div>
     </div>
   );

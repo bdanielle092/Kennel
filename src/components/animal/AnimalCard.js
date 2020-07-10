@@ -1,6 +1,7 @@
 import React from "react";
 import "./Animal.css"
 
+
 const AnimalCard = (props) => {
   return (
     <div className="card">
@@ -13,6 +14,7 @@ const AnimalCard = (props) => {
         </h3>
         <p>Breed: {props.animals.breed}</p>
         <button type="button" onClick={() => props.deleteAnimal(props.animals.id)}>Discharge</button>
+      
       </div>
     </div>
   );

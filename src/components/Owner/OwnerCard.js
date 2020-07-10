@@ -12,7 +12,7 @@ const AnimalCard = (props) => {
   Name: <span className="card-ownername">{props.owners.name}</span>
         </h3>
             <p>Quote: {props.owners.quote}</p>
-            <button type="button" onClick={() => props.deleteOwner(props.owners.id)}>Closed</button>
+            <button type="button" onClick={() => props.deleteOwner(props.owners.id)}>Remove</button>
       </div>
     </div>
   );
