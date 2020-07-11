@@ -69,6 +69,12 @@
       "name": "Maddie",
       "quote": "I enjoyed hanging with your pets",
       "picture": "./img/employee3.jpg"
+    },
+    {
+      "name": "Nate",
+      "quote": "I love my job",
+      "picture": "./img/employee.jpg",
+      "id": 4
     }
   ],
   "owners": [
@@ -89,6 +95,12 @@
       "name": "Vanessa",
       "quote": "My dog Shelby is so happy after being at Franklin doggie Kennel",
       "picture": "./img/vanessa.jpg"
+    },
+    {
+      "name": "Logan",
+      "quote": "Always a great time for my dog",
+      "picture": "./img/chris.jpg",
+      "id": 4
     }
   ]
 }

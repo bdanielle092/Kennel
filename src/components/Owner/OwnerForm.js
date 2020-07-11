@@ -1,28 +1,28 @@
 import React, { useState } from 'react';
-import EmployeeManager from '../../modules/EmployeeManager';
-import './EmployeeForm.css'
+import OwnerManager from '../../modules/OwnerManager';
+import './OwnerForm.css'
 
-const EmployeeForm = props => {
-  const [employee, setEmployee] = useState({ name: "", quote: "", picture: "./img/employee.jpg" });
+const OwnerForm = props => {
+  const [owner, setOwner] = useState({ name: "", quote: "", picture: "./img/chris.jpg" });
   const [isLoading, setIsLoading] = useState(false);
 
   const handleFieldChange = evt => {
-    const stateToChange = { ...employee };
+    const stateToChange = { ...owner };
     stateToChange[evt.target.id] = evt.target.value;
-    setEmployee(stateToChange);
+    setOwner(stateToChange);
   };
 
-  /*  Local method for validation, set loadingStatus, create employee      object, invoke the EmployeeManager post method, and redirect to the full employee list
+  /*  Local method for validation, set loadingStatus, create owner    object, invoke the OwnerManager post method, and redirect to the full owner list
   */
-  const constructNewEmployee = evt => {
+  const constructNewOwner= evt => {
     evt.preventDefault();
-    if (employee.name === "" || employee.quote === "") {
-      window.alert("Please input an employee name and quote");
+    if (owner.name === "" || owner.quote === "") {
+      window.alert("Please input an owner name and quote");
     } else {
       setIsLoading(true);
-      // Create the employee and redirect user to employee list
-      EmployeeManager.post(employee)
-        .then(() => props.history.push("/employees"));
+      // Create the owner and redirect user to owner list
+      OwnerManager.post(owner)
+        .then(() => props.history.push("/owners"));
     }
   };
 
@@ -36,7 +36,7 @@ const EmployeeForm = props => {
               required
               onChange={handleFieldChange}
               id="name"
-              placeholder="Employee name"
+              placeholder=" Owner name"
             />
             <label htmlFor="name">Name</label>
             <input
@@ -52,7 +52,7 @@ const EmployeeForm = props => {
             <button
               type="button"
               disabled={isLoading}
-              onClick={constructNewEmployee}
+              onClick={constructNewOwner}
             >Submit</button>
           </div>
         </fieldset>
@@ -61,4 +61,4 @@ const EmployeeForm = props => {
   );
 };
 
-export default EmployeeForm
+export default OwnerForm

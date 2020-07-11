@@ -12,6 +12,8 @@ import LocationDetail from "./Location/LocationDetail";
 import OwnerDetail  from "./Owner/OwnerDetail";
 import AnimalForm from "./animal/AnimalForm"
 import LocationForm from "./Location/LocationForm";
+import EmployeeForm from "./Employee/EmployeeForm";
+import OwnerForm from "./Owner/OwnerForm";
 
 
 const ApplicationViews = () => {
@@ -66,26 +68,36 @@ const ApplicationViews = () => {
         exact
         path="/employees"
         render={props => {
-          return <EmployeeList/>;
+          return <EmployeeList {...props}/>;
         }}
       />
       <Route 
       path="/employees/:employeeId(\d+)" render={(props) => {
     // Pass the employeeId to the EmployeeDetailComponent
-      return <EmployeeDetail employeeId={parseInt(props.match.params.employeeId)}/>
+      return <EmployeeDetail employeeId={parseInt(props.match.params.employeeId)}
+      {...props}
+      />
+      }} />
+      <Route path="/employees/new" render={(props) => {
+      return <EmployeeForm {...props} />
       }} />
       <Route
         exact
         path="/owners"
         render={props => {
-          return <OwnerList />;
+          return <OwnerList {...props}/>;
         }}
       />
        <Route 
        path="/owners/:ownerId(\d+)" 
        render={(props) => {
      // Pass the ownerId to the OwnerDetailComponent
-      return <OwnerDetail ownerId={parseInt(props.match.params.ownerId)}/>
+      return <OwnerDetail ownerId={parseInt(props.match.params.ownerId)} 
+     {...props}
+      />
+}} />
+<Route path="/owners/new" render={(props) => {
+  return <OwnerForm {...props} />
 }} />
     </React.Fragment>
   );
