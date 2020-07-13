@@ -15,10 +15,15 @@ const AnimalCard = (props) => {
           Name: <span className="card-petname">{firstLetterCase(props.animals.name)}</span>
         </h3>
         <p>Breed: {props.animals.breed}</p>
-        <button type="button" onClick={() => props.deleteAnimal(props.animals.id)}>Discharge</button>
+       
         <Link to={`/animals/${props.animals.id}`}>
         <button>Details</button>
         </Link>
+        <button type="button"
+       onClick={() => props.history.push(`/animals/${props.animals.id}/edit`)}>
+       Edit
+      </button>
+      <button type="button" onClick={() => props.deleteAnimal(props.animals.id)}>Discharge</button>
       </div>
     </div>
   );
