@@ -13,10 +13,15 @@ const OwnerCard = (props) => {
           Name: <span className="card-ownername">{props.owners.name}</span>
         </h3>
             <p>Quote: {props.owners.quote}</p>
-            <button type="button" onClick={() => props.deleteOwner(props.owners.id)}>Remove</button>
+       
             <Link to={`/owners/${props.owners.id}`}>
             <button>Details</button>
             </Link>
+            <button type="button"
+  onClick={() => props.history.push(`/owners/${props.owners.id}/edit`)}>
+  Edit
+</button>
+<button type="button" onClick={() => props.deleteOwner(props.owners.id)}>Remove</button>
       </div>
     </div>
   );

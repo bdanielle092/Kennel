@@ -11,7 +11,7 @@ const OwnerDetail = props => {
       .then(owners => {
         setOwner({
           name: owners.name,
-          owner: owners.quote,
+          quote: owners.quote,
           picture: owners.picture
         });
       });
@@ -27,7 +27,6 @@ const OwnerDetail = props => {
          }
         <h3>Name: <span style={{ color: 'darkslategrey' }}>{owners.name}</span></h3>
         <p>Quote: {owners.quote}</p>
-        
       </div>
     </div>
   );
