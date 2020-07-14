@@ -1,8 +1,13 @@
 import React from "react";
+import "./home.css"
 
 const Home = () => {
   return (
-    <div>
+    <div className="home">
+    <picture>
+    <img className="homeImg" src={require(`./home.jpg`)} alt="Dog"/>
+    </picture>
+    
     <h2>
      Doggie Kennels
       <br />
@@ -15,6 +20,6 @@ const Home = () => {
     </address>
     </div>
   );
-};
+ };
 
 export default Home;

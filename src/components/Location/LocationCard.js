@@ -12,7 +12,7 @@ const LocationCard = (props) => {
         <h3>
   Name: <span className="card-locationname">{props.locations.name}</span>
         </h3>
-  <p>Quote: {props.locations.quote}</p>
+ 
 
    <Link to={`/locations/${props.locations.id}`}>
    <button>Details</button>

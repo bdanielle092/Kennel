@@ -12,7 +12,7 @@ const OwnerCard = (props) => {
         <h3>
           Name: <span className="card-ownername">{props.owners.name}</span>
         </h3>
-            <p>Quote: {props.owners.quote}</p>
+            
        
             <Link to={`/owners/${props.owners.id}`}>
             <button>Details</button>

@@ -14,7 +14,7 @@ const AnimalCard = (props) => {
         <h3>
           Name: <span className="card-petname">{firstLetterCase(props.animals.name)}</span>
         </h3>
-        <p>Breed: {props.animals.breed}</p>
+      
        
         <Link to={`/animals/${props.animals.id}`}>
         <button>Details</button>
