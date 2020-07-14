@@ -4,50 +4,56 @@
       "id": 1,
       "name": "Doodles",
       "breed": "Poodle",
-      "picture": "./img/doodles.jpg"
+      "picture": "./img/doodles.jpg",
+      "employeeId": 4
+      
     },
     {
       "id": 2,
       "name": "decker",
       "breed": "German Shepherd",
-      "picture": "./img/decker.jpg"
+      "picture": "./img/decker.jpg",
+       "employeeId": 3
     },
     {
       "id": 3,
       "name": "Esme",
       "breed": "Pitbull",
-      "picture": "./img/esme.jpg"
+      "picture": "./img/esme.jpg",
+       "employeeId": 2
     },
     {
       "name": "rex",
-      "breed": "cat",
-      "picture": "./img/dog.svg",
-      "id": 4
+      "breed": "lab",
+      "picture": "./img/dog4.jpg",
+      "id": 4,
+       "employeeId": 1
+
     }
   ],
   "locations": [
     {
       "id": 1,
       "name": "Nashville Doggie Daycare",
-      "quote": "Best doggie daycare in town",
+      "address": "5th ave north",
       "picture": "./img/location.jpg"
     },
     {
       "id": 2,
       "name": "Faith's Doggie Kennel",
-      "quote": "Your second Home",
+      "address": "500 puppy way",
       "picture": "./img/location2.jpg"
     },
     {
       "id": 3,
       "name": "Franklin Doggie Daycare",
-      "quote": "The perfect place to Hang",
+      "address": "605 dog rd",
       "picture": "./img/location3.jpg"
     },
     {
       "name": "Brentwood Doggie daycare",
-      "quote": "Your home away from home",
-      "picture": "./img/location.jpg",
+      "address": "502 pet way",
+      "picture": "./img/location4.jpg",
       "id": 4
     }
   ],
@@ -71,9 +77,9 @@
       "picture": "./img/employee3.jpg"
     },
     {
-      "name": "Nate",
+      "name": "Logan",
       "quote": "I love my job",
-      "picture": "./img/employee.jpg",
+      "picture": "./img/employee4.jpg",
       "id": 4
     }
   ],
@@ -97,9 +103,9 @@
       "picture": "./img/vanessa.jpg"
     },
     {
-      "name": "Logan",
+      "name": "Josh",
       "quote": "Always a great time for my dog",
-      "picture": "./img/chris.jpg",
+      "picture": "./img/owner4.jpg",
       "id": 4
     }
   ]

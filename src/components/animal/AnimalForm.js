@@ -3,7 +3,7 @@ import AnimalManager from '../../modules/AnimalManager';
 import './AnimalForm.css'
 
 const AnimalForm = props => {
-  const [animal, setAnimal] = useState({ name: "", breed: "" , picture: "./img/dog.svg"});
+  const [animal, setAnimal] = useState({ name: "", breed: "" , picture: "./img/dog4.jpg"});
   const [isLoading, setIsLoading] = useState(false);
 
   const handleFieldChange = evt => {

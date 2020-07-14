@@ -3,7 +3,7 @@ import LocationManager from '../../modules/LocationManager';
 import './LocationForm.css'
 
 const LocationForm = props => {
-  const [ location, setLocation] = useState({ name: "", quote: "" , picture: "./img/location.jpg"});
+  const [ location, setLocation] = useState({ name: "", address: "" , picture: "./img/location4.jpg"});
   const [isLoading, setIsLoading] = useState(false);
 
   const handleFieldChange = evt => {
@@ -16,7 +16,7 @@ const LocationForm = props => {
   */
   const constructNewLocation = evt => {
     evt.preventDefault();
-    if (location.name === "" || location.quote === "") {
+    if (location.name === "" || location.address === "") {
       window.alert("Please input an location name and quote");
     } else {
       setIsLoading(true);
@@ -43,10 +43,10 @@ const LocationForm = props => {
               type="text"
               required
               onChange={handleFieldChange}
-              id="quote"
-              placeholder="quote"
+              id="address"
+              placeholder="address"
             />
-            <label htmlFor="quote">Quote</label>
+            <label htmlFor="addresss">Address</label>
           </div>
           <div className="alignRight">
             <button

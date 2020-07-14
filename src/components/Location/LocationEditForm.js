@@ -3,7 +3,7 @@ import LocationManager from "../../modules/LocationManager"
 import "./LocationForm.css"
 
 const LocationEditForm = props => {
-    const[location, setLocation] = useState({name: "", quote: "", picture: ""});
+    const[location, setLocation] = useState({name: "", address: "", picture: ""});
     const [isLoading, setIsLoading] = useState(false);
 
     const handleFieldChange = evt => {
@@ -19,7 +19,7 @@ const LocationEditForm = props => {
         const editedLocation = {
             id: props.match.params.locationId,
             name: location.name,
-            quote: location.quote,
+            address: location.address,
             picture: location.picture
         };
 
@@ -33,7 +33,7 @@ const LocationEditForm = props => {
             setLocation(location);
             setIsLoading(false);
         });
-    }, []);
+    }, [props.match.params.locationId]);
 
     return (
         <>
@@ -55,10 +55,10 @@ const LocationEditForm = props => {
                         required
                         className="form-control"
                         onChange={handleFieldChange}
-                        id="quote"
-                        value={location.quote}
+                        id="address"
+                        value={location.address}
                         />
-                        <label htmlFor="quote">Quote</label>
+                        <label htmlFor="address">Address</label>
 
                 </div>
                 <div className="alignRight">

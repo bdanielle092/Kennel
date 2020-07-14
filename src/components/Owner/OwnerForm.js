@@ -3,7 +3,7 @@ import OwnerManager from '../../modules/OwnerManager';
 import './OwnerForm.css'
 
 const OwnerForm = props => {
-  const [owner, setOwner] = useState({ name: "", quote: "", picture: "./img/chris.jpg" });
+  const [owner, setOwner] = useState({ name: "", quote: "", picture: "./img/owner4.jpg" });
   const [isLoading, setIsLoading] = useState(false);
 
   const handleFieldChange = evt => {

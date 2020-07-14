@@ -3,7 +3,7 @@ import LocationManager from '../../modules/LocationManager';
 import './LocationDetail.css'
 
 const LocationDetail = props => {
-  const [locations, setLocation] = useState({ name: "", quote: "" , picture: "" });
+  const [locations, setLocation] = useState({ name: "", address: "" , picture: "" });
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -12,7 +12,7 @@ const LocationDetail = props => {
       .then(locations => {
         setLocation({
           name: locations.name,
-          quote: locations.quote,
+          address: locations.address,
           picture: locations.picture
         });
         setIsLoading(false);
@@ -36,7 +36,7 @@ const LocationDetail = props => {
         </picture>
         }
         <h3>Name: <span style={{ color: 'darkslategrey' }}>{locations.name}</span></h3>
-        <p>Quote: {locations.quote}</p>
+        <p>Adress: {locations.address}</p>
         <button type="button" disabled={isLoading} onClick={handleDelete}>Closed</button>
       </div>
     </div>

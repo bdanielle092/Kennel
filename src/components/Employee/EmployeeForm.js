@@ -3,7 +3,7 @@ import EmployeeManager from '../../modules/EmployeeManager';
 import './EmployeeForm.css'
 
 const EmployeeForm = props => {
-  const [employee, setEmployee] = useState({ name: "", quote: "", picture: "./img/employee.jpg" });
+  const [employee, setEmployee] = useState({ name: "", quote: "", picture: "./img/employee4.jpg" });
   const [isLoading, setIsLoading] = useState(false);
 
   const handleFieldChange = evt => {
