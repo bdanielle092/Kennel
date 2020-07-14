@@ -5,6 +5,7 @@ import "./EmployeeForm.css"
 const EmployeeEditForm = props => {
     const[employee, setEmployee] = useState({name: "", quote: "", picture: ""});
     const [isLoading, setIsLoading] = useState(false);
+    
 
     const handleFieldChange = evt => {
         const stateToChange = {...employee };
@@ -59,6 +60,8 @@ const EmployeeEditForm = props => {
                         value={employee.quote}
                         />
                         <label htmlFor="quote">Quote</label>
+
+                    <label htmlFor="employeeId">Employee</label>
 
                 </div>
                 <div className="alignRight">

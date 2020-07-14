@@ -1,6 +1,6 @@
 import React from "react";
 import "./Employee.css"
-import { Link } from "react-router-dom";
+
 
 const EmployeeCard = (props) => {
   return (
@@ -13,9 +13,8 @@ const EmployeeCard = (props) => {
   Name: <span className="card-employeename">{props.employees.name}</span>
         </h3>
   
-   <Link to={`/employees/${props.employees.id}`}>
-    <button>Details</button>
-   </Link>
+        <button type="button"
+        onClick={() => { props.history.push(`/employees/${props.employees.id}/details`) }}>Details</button>
    <button type="button"
   onClick={() => props.history.push(`/employees/${props.employees.id}/edit`)}>
   Edit

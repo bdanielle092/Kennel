@@ -6,29 +6,27 @@
       "breed": "Poodle",
       "picture": "./img/doodles.jpg",
       "employeeId": 4
-      
     },
     {
       "id": 2,
       "name": "decker",
       "breed": "German Shepherd",
       "picture": "./img/decker.jpg",
-       "employeeId": 3
+      "employeeId": 3
     },
     {
       "id": 3,
       "name": "Esme",
       "breed": "Pitbull",
       "picture": "./img/esme.jpg",
-       "employeeId": 2
+      "employeeId": 1
     },
     {
       "name": "rex",
       "breed": "lab",
       "picture": "./img/dog4.jpg",
       "id": 4,
-       "employeeId": 1
-
+      "employeeId": 1
     }
   ],
   "locations": [
@@ -62,25 +60,31 @@
       "id": 1,
       "name": "Brad",
       "quote": "Employee of the Month",
-      "picture": "./img/employee.jpg"
+      "picture": "./img/employee.jpg",
+      "locationId": 4
     },
     {
       "id": 2,
       "name": "Jake",
       "quote": "Your pets are my second Family",
-      "picture": "./img/employee2.jpg"
+      "picture": "./img/employee2.jpg",
+      "locationId": 3
+
     },
     {
       "id": 3,
       "name": "Maddie",
       "quote": "I enjoyed hanging with your pets",
-      "picture": "./img/employee3.jpg"
+      "picture": "./img/employee3.jpg",
+      "locationId": 2
+
     },
     {
       "name": "Logan",
       "quote": "I love my job",
       "picture": "./img/employee4.jpg",
-      "id": 4
+      "id": 4,
+      "locationId": 1
     }
   ],
   "owners": [
