@@ -12,14 +12,24 @@ const LocationCard = (props) => {
         <h3>
   Name: <span className="card-locationname">{props.locations.name}</span>
         </h3>
-
-        <button type="button"
+     
+  Adress: <span className="card-locationAddress">{props.locations.address}</span>
+       
+        
+       {props.hasUser
+        ?<button type="button"
         onClick={() => { props.history.push(`/locations/${props.locations.id}/details`) }}>Details</button>
-  <button type="button"
+        : null}
+        {props.hasUser
+  ?<button type="button"
+  
   onClick={() => props.history.push(`/locations/${props.locations.id}/edit`)}>
   Edit
 </button>
-<button type="button" onClick={() => props.deleteLocation(props.locations.id)}>Closed</button>
+: null}
+{props.hasUser
+?<button type="button" onClick={() => props.deleteLocation(props.locations.id)}>Closed</button>
+: null}
       </div>
     </div>
   );

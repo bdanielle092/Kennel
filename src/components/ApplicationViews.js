@@ -74,7 +74,7 @@ const ApplicationViews = (props) => {
         path="/locations"
         render={props => {
           
-          return <LocationList {...props}/>;
+          return <LocationList {...props}hasUser={hasUser}/>;
            }}
       />
       <Route 
@@ -87,11 +87,18 @@ const ApplicationViews = (props) => {
      />
 }} />
     <Route path="/locations/new" render={(props) => {
+      if(hasUser) {
   return <LocationForm {...props} />
+      }else {
+        return <Redirect to="/login"/>
+      }
 }} />
 <Route path="/locations/:locationId(\d+)/edit" render={props => {
-  
+   if(hasUser){
     return <LocationEditForm {...props} />
+   }else {
+     return < Redirect to="login"></Redirect>
+   }
 }} />
 <Route path="/locations/:locationId(\d+)/details" render={(props) => {
     return <LocationWithEmployees {...props} />

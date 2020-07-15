@@ -26,13 +26,15 @@ const LocationList = (props) => {
   return(
     <>
     {/* add this button above your display of location cards */}
-<section className="section-content">
+    {props.hasUser
+?<section className="section-content">
   <button type="button"
       className="btn"
       onClick={() => {props.history.push("/locations/new")}}>
       Admit Location
   </button>
 </section>
+: null }
     <div className="container-cards">
       {locations.map(location => <LocationCard key={location.id} locations={location} deleteLocation={deleteLocation} {...props}/>)}
     </div>
