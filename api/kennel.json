@@ -12,14 +12,14 @@
       "name": "decker",
       "breed": "German Shepherd",
       "picture": "./img/decker.jpg",
-      "employeeId": 3
+      "employeeId": 2
     },
     {
       "id": 3,
       "name": "Esme",
       "breed": "Pitbull",
       "picture": "./img/esme.jpg",
-      "employeeId": 1
+      "employeeId": 3
     },
     {
       "name": "rex",
@@ -68,16 +68,14 @@
       "name": "Jake",
       "quote": "Your pets are my second Family",
       "picture": "./img/employee2.jpg",
-      "locationId": 3
-
+      "locationId": 2
     },
     {
       "id": 3,
       "name": "Maddie",
       "quote": "I enjoyed hanging with your pets",
       "picture": "./img/employee3.jpg",
-      "locationId": 2
-
+      "locationId": 3
     },
     {
       "name": "Logan",
