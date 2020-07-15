@@ -38,7 +38,6 @@ const EmployeeList = (props) => {
             {employees.map(employee => <EmployeeCard key={employee.id} employees={employee} deleteEmployee={deleteEmployee} {...props}/>)}
         </div>
         </>
-
     );
 };
 

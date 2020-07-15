@@ -9,7 +9,6 @@ const AnimalEditForm = props => {
   const [employees, setEmployees] = useState([])
  
 
-
   const handleFieldChange = evt => {
     const stateToChange = { ...animal };
     stateToChange[evt.target.id] = evt.target.value;
@@ -90,9 +89,7 @@ const AnimalEditForm = props => {
                 )}
                 </select>
 
-            
           </div>
-        
           <div className="alignRight">
             <button
               type="button" disabled={isLoading}

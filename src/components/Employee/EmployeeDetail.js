@@ -4,7 +4,7 @@ import './EmployeeDetail.css'
 
 const EmployeeDetail = props => {
   const [employees, setEmployee] = useState({ name: "", quote: "" , picture: ""});
-
+  const [isLoading, setIsLoading] = useState(true)
   useEffect(() => {
     //get(id) from EmployeeManager and hang on to the data; put it into state
     EmployeeManager.get(props.employeeId)
@@ -14,8 +14,16 @@ const EmployeeDetail = props => {
           quote: employees.quote,
           picture: employees.picture
         });
+        setIsLoading(false);
       });
   }, [props.employeeId]);
+  const handleDelete = () => {
+
+    setIsLoading(true);
+    EmployeeManager.delete(props.employeeId).then(() =>
+     props.history.push("/employee")
+    );
+  };
 
   return (
     <div className="card">
@@ -27,6 +35,7 @@ const EmployeeDetail = props => {
           }
         <h3>Name: <span style={{ color: 'darkslategrey' }}>{employees.name}</span></h3>
         <p>Quote: {employees.quote}</p>
+        <button type="button" disabled={isLoading} onClick={handleDelete}>Remove</button>
       </div>
     </div>
   );
