@@ -26,7 +26,7 @@ const EmployeeEditForm = props => {
             quote: employee.quote,
             picture: employee.picture,
             // any kind of input coming back as string 
-            locationId: parseInt(employee.locatioinId)
+            locationId: parseInt(employee.locationId)
         };
 
         EmployeeManager.update(editedEmployee)
