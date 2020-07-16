@@ -30,6 +30,7 @@ update(editedAnimal) {
     body: JSON.stringify(editedAnimal)
   }).then(data => data.json());
 },
+// its going to return a random animal from the data base for the spotlight animal 
 getRandomId() {
   return fetch(`${remoteURL}/animals`)
     .then(result => result.json())
